@@ -17,6 +17,7 @@
     {
         while (true) // Fortsätter att visa alternativen tills vi vill sluta
         {
+            Console.Clear();
             Console.WriteLine("Välkommen till kontaktlistan!");
             Console.WriteLine("Välj ett alternativ:");
             Console.WriteLine("1. Lägg till ny kontakt");
@@ -38,15 +39,19 @@
             switch (choice)
             {
                 case 1:
+                    Console.Clear();
                     _contactService.AddNewContact(); // Lägger till en ny kontakt
                     break;
                 case 2:
+                    Console.Clear();
                     _contactService.ShowAllContacts(); // Visar alla kontakter
                     break;
                 case 3:
+                    Console.Clear();
                     _contactService.RemoveContact(); // Tar bort en kontakt
                     break;
                 case 4:
+                    Console.Clear();
                     _contactService.DisplayContactInformation(); // Visar detaljer om en kontakt
                     break;
                 case 5:

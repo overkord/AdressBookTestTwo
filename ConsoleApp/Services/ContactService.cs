@@ -141,6 +141,7 @@ public class ContactService
             };
 
             AddContact(newContact);
+            Console.Clear();
             Console.WriteLine("Kontakt tillagd!");
 
             Console.WriteLine("Vill du ange en till kontakt? (Ja/Nej)");
@@ -157,6 +158,7 @@ public class ContactService
     /// </summary>
     public void ShowAllContacts()
     {
+        Console.Clear();
         var allContacts = GetAllContacts();
         if (allContacts.Count == 0)
         {
